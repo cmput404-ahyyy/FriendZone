@@ -1,0 +1,47 @@
+1. In total there are 41 user stories (21 to fill)
+2. Author post (basic) 12
+	2.1. As an author I want to make posts.
+	2.2. As an author, posts I create can link to images.
+	2.3. As a server admin, images can be hosted on my server.
+	2.4. As an author, posts I create be private to me
+	2.5. As an author, posts I create be private to another author
+	2.6. As an author, posts I create be private to my friends
+	2.7. As an author, posts I create be private to friends of friends
+	2.8. As an author, posts I create be private to only friends on my host
+	2.9. As an author, posts I create can be public
+	2.10. As an author, posts I make can be in simple plain text
+	2.11. As an author, posts I make can be in markdown (commonMark is good)
+	2.12. As an author, I want a consistent identity per server
+3. Author social part 9
+	3.1. As an author, I want to pull in my github activity to my “stream”
+	3.2. As an author, I want to post posts to my “stream”
+	3.3. As an author, I want to delete my own posts.
+	3.4. As an author, I want to befriend local authors
+	3.5. As an author, I want to befriend remote authors
+	3.6. As an author, I want to feel safe about sharing images and posts with my friends – images should not publicly accessible without authentication.
+	3.7. As an author, I want un-befriend local and remote authors
+	3.8. As an author, I want to be able to use my web-browser to manage my profile
+	3.9. As an author, I want to be able to use my web-browser to manage/author my posts
+4. Author special factors 7
+	4.1. As an author, other authors cannot modify my data
+	4.2. As an author, I want to comment on posts that I can access
+	4.3. As an author, my server will know about my friends
+	4.4. As an author, When I befriend someone it follows them, only when the other authors befriends me do I count as a real friend.
+	4.5. As an author, I want to know if I have friend requests.
+	4.6. As an author I should be able to browse the public posts of everyone
+	4.7. As an author I should be able to browse the posts of others depending on my status
+5. Admin 13
+	5.1. As a server admin, I want to host multiple authors on my server
+	5.2. As a server admin, I want to share or not share posts with users on other servers.
+	5.3. As a server admin, I want to share or not share images with users on other servers.
+	5.4. As a server admin, I want to be able add, modify, and remove authors.
+	5.5. As a server admin, I want to be able allow users to sign up but require my OK to finally be on my server
+	5.6. As a server admin, I don’t want to do heavy setup to get the posts of my author’s friends.
+	5.7. As a server admin, I want a restful interface for most operations
+	5.8. As a server admin, I want to be able to add nodes to share with
+	5.9. As a server admin, I want to be able to remove nodes and stop sharing with them.
+	5.10. As a server admin, I can limit nodes connecting to me via authentication.
+	5.11. As a server admin, node to node connections can be authenticated with HTTP Basic Auth
+	5.12. As a server admin, I can disable the node to node interfaces for connections that are not authenticated!
+	5.13. As an author, I want to be able to make posts that are unlisted, that are publicly shareable by URI alone (or for embedding images)
+6. 
