@@ -61,10 +61,12 @@ class Friends(models.Model):
     1, author one
     2, author two
     """
-    
+    pair_id = models.AutoField(primary_key=True)
+    user_one_id = models.ForeignKey(Author, on_delete=models.CASCADE)
+    user_two_id = models.ForeignKey(Author, on_delete=models.CASCADE)
 
+"""
 class Nodes(model.Model):
-    """
     1, IP? primary key
     2, permission
-    """
+"""
