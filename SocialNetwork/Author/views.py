@@ -5,11 +5,11 @@ from django.contrib.auth.decorators import login_required
 
 
 def login(request):
-    return render(request, 'author/login.html')
+    pass
 
 
 def index(request):
-    return render(request,'<h1>logged In</h1>')
+    pass
 
 def register(request):
     pass
