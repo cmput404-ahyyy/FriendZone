@@ -18,7 +18,7 @@ class Post(models.Model):
     publicationDate=models.DateTimeField('date published')
     content=models.TextField()
     title=models.CharField(max_length=50)
-    permission = models.models.CharField(max_length=2, choices=PERMISSION_OPTIONS)
+    permission = models.CharField(max_length=2, choices=PERMISSION_OPTIONS)
     permitted_authors = models.TextField(null=True) # store permitted author as a JSONED python list
     author= models.ForeignKey(Author,on_delete=models.CASCADE)
 
@@ -29,7 +29,7 @@ class Comment(models.Model):
     post=models.ForeignKey(Post,on_delete=models.CASCADE)
     published=models.DateTimeField('date published')
 
-class Image(model.Model):
+class Image(models.Model):
     """
     1, user id
     2, post id
