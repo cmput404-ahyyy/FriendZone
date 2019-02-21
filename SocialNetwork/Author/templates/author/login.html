@@ -1,0 +1,22 @@
+
+
+    <<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title>Login</title>
+        </head>
+        <body>
+            <h1>Welcome to the Social Network!</h1>
+
+            <!-- https://wsvincent.com/django-user-authentication-tutorial-login-and-logout/ here -->
+                <h2>Login</h2>
+                    <form method="post">
+                      {% csrf_token %}
+                      {{ form.as_p }}
+                      <button type="submit">Login</button>
+                    </form>
+
+
+        </body>
+    </html>
