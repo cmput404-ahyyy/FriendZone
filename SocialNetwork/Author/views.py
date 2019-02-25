@@ -8,8 +8,8 @@ from django.shortcuts import redirect
 
 
 def login(request):
+    return render(request, 'login.html')
     return HttpResponse("your at login page")   
-
 
 def index(request):
     return redirect('login/')

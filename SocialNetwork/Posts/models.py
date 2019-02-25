@@ -18,11 +18,7 @@ class Post(models.Model):
     publicationDate=models.DateTimeField('date published')
     content=models.TextField()
     title=models.CharField(max_length=50)
-<<<<<<< HEAD
     permission = models.CharField(max_length=2, choices=PERMISSION_OPTIONS, default='P')
-=======
-    permission = models.CharField(max_length=2, choices=PERMISSION_OPTIONS)
->>>>>>> 1a988f58530ea03fd73d7babb7056ca16fcb8fa5
     permitted_authors = models.TextField(null=True) # store permitted author as a JSONED python list
     author= models.ForeignKey(Author,on_delete=models.CASCADE,null=True)
 
@@ -40,10 +36,5 @@ class Image(models.Model):
     3, Permission (non-public)
     """
     img_id = models.AutoField(primary_key=True)
-<<<<<<< HEAD
     post_id = models.ForeignKey(Post, on_delete=models.CASCADE,null=True)
     compressed_img = models.TextField(null=True) # store compressed image, that is encoded by JSON
-=======
-    post_id = models.ForeignKey(Post, on_delete=models.CASCADE)
-    compressed_img = models.TextField(null=True) # store compressed image, that is encoded by JSON
->>>>>>> 1a988f58530ea03fd73d7babb7056ca16fcb8fa5
