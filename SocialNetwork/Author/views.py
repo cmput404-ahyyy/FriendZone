@@ -28,3 +28,4 @@ def logout(request):
 
 def notifications(request):
     pass
+
