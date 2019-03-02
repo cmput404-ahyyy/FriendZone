@@ -4,10 +4,12 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import redirect
 
+# Create your views here.
+
+
 def login(request):
     return render(request, 'login.html')
     return HttpResponse("your at login page")   
-
 
 def index(request):
     return redirect('login/')
