@@ -9,7 +9,10 @@ from django.shortcuts import redirect
 
 def login(request):
     return render(request, 'login.html')
-    return HttpResponse("your at login page")   
+
+def homepage(request, auth_id):
+    print(auth_id)
+    return render(request, 'homepage.html')
 
 def index(request):
     return redirect('login/')

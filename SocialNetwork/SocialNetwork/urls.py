@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from api.resources import AuthorResource
 
+author_resource = AuthorResource()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Author.urls')),
-    path('author/',include('Posts.urls'))
+    path('author/',include('Posts.urls')),
+    path('api/', include(author_resource.urls))
 ]

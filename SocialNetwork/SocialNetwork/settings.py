@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Posts',
     'Author',
     'Admin',
+    'api',
 ]
 
 MIDDLEWARE = [
