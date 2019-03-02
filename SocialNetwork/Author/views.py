@@ -2,15 +2,17 @@ from django.shortcuts import render
 from .models import Author
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
-# Create your views here.
-
+from django.shortcuts import redirect
 
 def login(request):
-    return render(request, 'author/login.html')
-    pass
+    return render(request, 'login.html')
+    return HttpResponse("your at login page")   
 
 
 def index(request):
+    return redirect('login/')
+
+def home(request):
     pass
 
 def register(request):
